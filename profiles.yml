@@ -1,0 +1,19 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgress
+      dbname: postgres
+      schema: public
+      port: 5432
+
+      # Optional Redshift configs:
+      # sslmode: prefer
+      # role: None
+      # ra3_node: true 
+      autocommit: true 
+      threads: 1
+      # connect_timeout: None
